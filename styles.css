@@ -11,10 +11,26 @@ body {
     height: 60vh;
     background-color: #add8e6; /* light bluish background color */
     background-size: cover;
-    background-image:url("20240301_004634.jpg");
     background-repeat: no-repeat;
-    
-    
+}
+
+/* Default background image for all devices */
+.container {
+    background-image: url("20240301_004634.jpg");
+}
+
+/* Desktop styles - Adjust the screen width as needed */
+@media only screen and (min-width: 600px) {
+    .container {
+        background-image: url("desktop_background.jpeg");
+    }
+}
+
+/* Mobile styles - Adjust the screen width as needed */
+@media only screen and (max-width: 599px) {
+    .container {
+        background-image: url("mobile_background.jpeg");
+    }
 }
 
 .birthday-card {
@@ -52,7 +68,6 @@ body {
     font-weight: bold;
     color: #333;
 }
-
 
 .message-box {
     background-color: #333; /* dark background color */
